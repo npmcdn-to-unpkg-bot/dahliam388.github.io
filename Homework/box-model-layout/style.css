@@ -1,4 +1,12 @@
-p.lorem, .borem, .porem {
+h3 {
+	color:white;
+	background-color: black;
+}
+
+p.lorem {
 	background-color: orange;
-	color:blue;
 	}
+
+#first p {
+	color: blue;
+}
