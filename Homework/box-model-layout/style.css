@@ -1,4 +1,12 @@
-#lorem {
-	background-color:orange;
-}
+p. {
+	background-color: orange;
+	}
 
+.lorem {
+	background-color: orange;
+	color:blue;
+	}
+
+.plurem {
+	color:green;
+	}
