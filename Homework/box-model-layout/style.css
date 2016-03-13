@@ -12,6 +12,7 @@ body {
 #navbar {
 	background-color: black;
 	text-align: center;
+	padding: 8px;
 }
 
 a {
@@ -22,6 +23,7 @@ a {
 .lorem, .borem, .gorem {
 	text-align: center;
 	background-color: tomato;
+	padding: 18px;
 }
 
 p.lorem {
