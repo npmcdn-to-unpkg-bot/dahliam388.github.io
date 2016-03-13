@@ -1,9 +1,26 @@
-h3 {
-	color:white;
+body {
+	background-color: gray;
+}
+
+#navbar {
+	color: white;
+	text-decoration: none;
 	background-color: black;
+	text-align: center;
+}
+
+#center {
+	background-color: orange;
 }
 
 p.lorem {
-	background-color: orange;
+	color: blue;
 	}
 
+p.borem {
+	color: green;
+	}
+
+p.gorem {
+	color: yellow;
+	}
