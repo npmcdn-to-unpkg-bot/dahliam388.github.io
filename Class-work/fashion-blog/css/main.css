@@ -1,0 +1,56 @@
+#container {
+	width: 720px;
+	padding: 54px;
+	border-left: solid 6px #dddddd;
+}	
+
+h1 {
+	color: red;
+	font-family: Lato;
+	font-size: 50px;
+	font-weight: 300px;
+}
+
+h2 {
+	color: black;
+	font-family: Lato;
+	font-weight: 300px;
+}
+
+nav {
+	font-family: Lato;
+	font-weight: 300px;
+}
+
+a {
+	color:#dddddd;
+}
+
+article {
+	font-family: Lato;
+	font-size: 28px;
+	font-weight: 500px;
+}
+
+.date {
+	color: #cccccc;
+	font-weight: 300px;
+}
+
+.articletitle .copy {
+	color: black;
+}
+
+.copy {
+	font-size: 12;
+	font-family: Lato;
+	font-weight: 300px;
+}
+
+.continue {
+	text-align: right;
+	font-family: Lato;
+	color: red;
+	font-weight: bold;
+}
+
