@@ -1,4 +1,5 @@
 #container {
+	font-family: Lato;
 	width: 720px;
 	padding: 54px;
 	border-left: solid 6px #dddddd;
@@ -6,30 +7,32 @@
 
 h1 {
 	color: red;
-	font-family: Lato;
 	font-size: 50px;
 	font-weight: 300px;
 }
 
 h2 {
 	color: black;
-	font-family: Lato;
 	font-weight: 300px;
 }
 
 nav {
-	font-family: Lato;
 	font-weight: 300px;
 }
 
 a {
 	color:#dddddd;
+	padding-right: 10px;
+}
+
+a:hover {
+
 }
 
 article {
-	font-family: Lato;
 	font-size: 28px;
 	font-weight: 500px;
+	border-bottom: solid 1px #dddddd;
 }
 
 .date {
@@ -43,14 +46,13 @@ article {
 
 .copy {
 	font-size: 12;
-	font-family: Lato;
 	font-weight: 300px;
 }
 
 .continue {
 	text-align: right;
-	font-family: Lato;
 	color: red;
 	font-weight: bold;
 }
+
 
