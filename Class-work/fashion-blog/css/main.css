@@ -23,10 +23,11 @@ nav {
 a {
 	color:#dddddd;
 	padding-right: 10px;
+
 }
 
 a:hover {
-
+color: #aa0000;
 }
 
 article {
