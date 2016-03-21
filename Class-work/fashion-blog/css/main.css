@@ -29,8 +29,8 @@ nav a:hover {
 
 #footernav a {
 	color:#dd0000;
-	padding-right: 10px;
-	padding-left: 10px;
+	padding-right: 2px;
+	padding-left: 2px;
 	font-weight: 300px;
 	text-decoration: none;
 }
@@ -42,13 +42,11 @@ color: #aa0000;
 article {
 	font-size: 28px;
 	font-weight: 500px;
-	border-bottom: solid 1px #dddddd;
 }
 
 .date {
 	color: #cccccc;
 	font-weight: 300px;
-	padding: 2px;
 }
 
 .articletitle .copy {
@@ -65,6 +63,8 @@ article {
 	text-align: right;
 	color: red;
 	font-weight: bold;
+	border-bottom: solid 1px #dddddd;
+	padding-bottom: 20px;
 }
 
 
