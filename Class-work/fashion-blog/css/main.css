@@ -28,9 +28,11 @@ nav a:hover {
 }
 
 #footernav a {
+	display: inline-block;
 	color:#dd0000;
-	padding-right: 2px;
-	padding-left: 2px;
+	padding-top: 25px;
+	padding-right: 1px;
+	padding-left: 1px;
 	font-weight: 300px;
 	text-decoration: none;
 }
@@ -67,4 +69,6 @@ article {
 	padding-bottom: 20px;
 }
 
-
+.copyright {
+	color: #bbbbbb;
+}
