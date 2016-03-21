@@ -2,7 +2,7 @@
 	font-family: Lato;
 	width: 720px;
 	padding: 54px;
-	border-left: solid 6px #dddddd;
+	border-left: solid 6px #444444;
 }	
 
 h1 {
@@ -16,17 +16,26 @@ h2 {
 	font-weight: 300px;
 }
 
-nav {
+nav a {
 	font-weight: 300px;
-}
-
-a {
-	color:#dddddd;
+	color: #dddddd;
 	padding-right: 10px;
-
 }
 
-a:hover {
+nav a:hover {
+	font-weight: 300px;
+	color: black;
+}
+
+#footernav a {
+	color:#dd0000;
+	padding-right: 10px;
+	padding-left: 10px;
+	font-weight: 300px;
+	text-decoration: none;
+}
+
+#footernav a:hover {
 color: #aa0000;
 }
 
@@ -39,6 +48,7 @@ article {
 .date {
 	color: #cccccc;
 	font-weight: 300px;
+	padding: 2px;
 }
 
 .articletitle .copy {
@@ -48,6 +58,7 @@ article {
 .copy {
 	font-size: 12;
 	font-weight: 300px;
+	line-height: 1.5;
 }
 
 .continue {
