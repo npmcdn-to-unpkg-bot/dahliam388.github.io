@@ -41,18 +41,48 @@ header nav a:hover {
 	font-style: italic;
 }
 
-img {
-	background-image: center;
+main {
+	background: url(../img/coworking.jpg);
+	overflow: auto;
 }
 
-article h2 {
+main #hoverbox {
+	float: right;
+	background-color: white;
+}
+
+main #hoverbox h2 {
 	font-family: Merriweather, serif;
-	font-size: 25px;
+	font-size: 22px;
+	font-style: bold;
 	color: black;
+	margin-bottom: 0px;
+}
+
+article h3 {
+	font-family: Merriweather, serif;
+	font-size: 22px;
+	color: black;
+	margin-bottom: 0px;
 }
 
 .paragraph1 {
 	font-family: Source Sans Pro;
 	font-size: 14px;
 	color: black;
+	margin-top: 0px;
+}
+
+.paragraph2 {
+	font-family: Source Sans Pro;
+	font-size: 14px;
+	color: black;
+	margin-top: 0px;
+}
+
+.paragraph3 {
+	font-family: Source Sans Pro;
+	font-size: 14px;
+	color: black;
+	margin-top: 0px;
 }
