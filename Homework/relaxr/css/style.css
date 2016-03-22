@@ -17,6 +17,7 @@ h1 {
   font-weight: 800px;
   color: white;
   float: left;
+  margin: 0px;
 }
 
 nav {
@@ -34,17 +35,20 @@ nav a {
 
 section {
   float: left;
+  margin: 0px;
 }
 
 h3 {
   font-size: 15px;
   color: #121212;
   font-style: bold;
+  margin: 0px;
 }
 
 p {
   font-size: 12px;
   font-weight: lighter;
+  margin: 0px;
 }
 
 .clear {

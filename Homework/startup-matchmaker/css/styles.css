@@ -1,4 +1,40 @@
-// FONT FAMILY HELPERS :)
-// font-family: 'Oswald', sans-serif;
-// font-family: 'Merriweather', serif;
-// font-family: 'Source Sans Pro', sans-serif;
+header {
+	overflow: auto;
+	padding: 20px;
+	border-bottom: 5px yellow;
+	background-color: black;
+}
+
+header h1 {
+	float: left;
+	color: yellow;
+	font-family: Merriweather, serif;
+}
+
+header nav {
+	float: right;
+	padding: 10px;
+	background-color: black;
+}
+
+header nav a {
+	text-decoration: none;
+	color: white;
+	font-family: Oswald;
+	padding-right: 15px;
+}
+
+header nav a:hover {
+	font-family: Oswald;
+}
+
+.tagline {
+	text-align: center;
+	color: black;
+	background-color: #c6c6c6;
+	font-family: Merriweather, serif;
+}
+
+main {
+
+}

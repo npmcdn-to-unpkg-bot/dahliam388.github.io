@@ -1,3 +1,9 @@
+// FONT FAMILY HELPERS :)
+// font-family: 'Oswald', sans-serif;
+// font-family: 'Merriweather', serif;
+// font-family: 'Source Sans Pro', sans-serif;
+
+
 Select styles are below. Approximate box model values as best as you can.
 
 Three Google Fonts are being used:
