@@ -37,6 +37,22 @@ header nav a:hover {
 	font-family: Merriweather, serif;
 	margin: 0px;
 	padding: 10px 10px;
-	font-size: 18px;
+	font-size: 21px;
 	font-style: italic;
+}
+
+img {
+	background-image: center;
+}
+
+article h2 {
+	font-family: Merriweather, serif;
+	font-size: 25px;
+	color: black;
+}
+
+.paragraph1 {
+	font-family: Source Sans Pro;
+	font-size: 14px;
+	color: black;
 }
