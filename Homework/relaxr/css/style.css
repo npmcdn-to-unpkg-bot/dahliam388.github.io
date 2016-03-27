@@ -4,7 +4,7 @@
 
 #container {
   font-family: Sans-serif;
-  width: 1020px;
+  width: 960px;
   margin: auto;
   background-color: #f0efef;
 }
@@ -43,16 +43,17 @@ nav a {
 
 section {
   float: left;
-  margin: 10px;
-  width: 700px;
+  margin-left: 40px;
+  width: 680px;
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 35px;
   color: #033048;
   margin: 0px;
   padding-bottom: 25px;
   margin-top: 0px;
+  line-height: 1.2;
 }
 
 p {
@@ -62,13 +63,14 @@ p {
   padding-top: 20px;
   color: #606161;
   line-height: 1.4;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 h4 {
   text-align: right;
   font-size: 22px;
   color: #033048;
+  padding-bottom: 15px;
 }
 
 .clear {
@@ -90,10 +92,37 @@ h4 {
 }
 
 #sidebar {
-  width: 320px;
+  width: 200px;
   float: right;
-  padding: 0 0 10px 10px;
+  padding-top: 50px;
+  text-align: left;
+  margin-left: -80px;
 }
+
+#sidebar h1 {
+  color: #033048;
+  font-size: 32px; 
+  padding-bottom: 20px;
+  padding-top: 15px
+}
+
+.learnmore {
+  margin: 0px;
+  color: #033048;
+}
+
+#sidebar ul {
+  line-height: 1.5;
+  padding-bottom: 80px
+  font-size: 24px;
+  color: #033048;
+}
+
+#sidebar p {
+  line-height: 1.2;
+  padding-bottom: 20px
+  font-size: 24px;
+  color: #606161;
 
 footer {
 
