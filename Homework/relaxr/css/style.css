@@ -4,7 +4,7 @@
 
 #container {
   font-family: Sans-serif;
-  width: 960px;
+  width: 1020px;
   margin: auto;
   background-color: #f0efef;
 }
@@ -16,11 +16,13 @@ header {
 }
 
 h1 {
-  font-size: 55px;
+  font-size: 45px;
   color: white;
   float: left;
   margin: 0px;
   padding: 0px;
+  font-style: bold;
+  line-height: .5;
 }
 
 nav {
@@ -35,7 +37,8 @@ nav a {
   color: yellow;
   text-decoration: none;
   margin: 0px;
-  padding-right: 20px;
+  padding-right: 30px;
+  line-height: 1;
 }
 
 section {
@@ -48,7 +51,7 @@ h3 {
   font-size: 40px;
   color: #033048;
   margin: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   margin-top: 0px;
 }
 
@@ -56,19 +59,20 @@ p {
   font-size: 24px;
   font-weight: lighter;
   margin: 0px;
-  padding-top: 10px;
+  padding-top: 20px;
   color: #606161;
   line-height: 1.4;
   padding-bottom: 20px;
 }
 
-.clear {
-  clear: both;
+h4 {
+  text-align: right;
+  font-size: 22px;
+  color: #033048;
 }
 
-.alignright {
-  float: right;
-  padding: 0 0 10px 10px;
+.clear {
+  clear: both;
 }
 
 .article1 {
@@ -84,10 +88,12 @@ p {
   padding-bottom: 25px;
   border-bottom: 1px solid #033048;
 }
-/******************************************
-/* BASE STYLES
-/*******************************************/
 
+#sidebar {
+  width: 320px;
+  float: right;
+  padding: 0 0 10px 10px;
+}
 
 footer {
 
