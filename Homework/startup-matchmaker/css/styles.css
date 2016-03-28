@@ -41,17 +41,18 @@ header nav a:hover {
 	font-style: italic;
 }
 
-main {
+#main {
 	background: url(../img/coworking.jpg);
 	overflow: auto;
+	height: 500px;
 }
 
-main #hoverbox {
+#hoverbox {
 	float: right;
 	background-color: white;
 }
 
-main #hoverbox h2 {
+#hoverbox h2 {
 	font-family: Merriweather, serif;
 	font-size: 22px;
 	font-style: bold;
