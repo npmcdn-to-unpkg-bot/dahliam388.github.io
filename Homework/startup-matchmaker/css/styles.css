@@ -45,6 +45,7 @@ header nav a:hover {
 	background: url(../img/coworking.jpg);
 	overflow: auto;
 	height: 500px;
+	background-size: cover;
 }
 
 #hoverbox {
@@ -84,19 +85,28 @@ header nav a:hover {
 
 #article1 {
 	float: left;
+	width: 200px;
+	margin: 20px;
+	line-height: 1.4;
 }
 
 #article2 {
 	float: left;
+	width: 200px;
+	margin: 20px;
+	line-height: 1.4;
 }
 
 #article3 {
 	float: left;
+	width: 200px;
+	margin: 20px;
+	line-height: 1.4;
 }
 
 section h3 {
 	font-family: Merriweather, serif;
-	font-size: 19px;
+	font-size: 17px;
 	color: black;
 	margin-bottom: 0px;
 	text-align: left;
@@ -104,21 +114,21 @@ section h3 {
 
 .paragraph1 {
 	font-family: Source Sans Pro;
-	font-size: 14px;
+	font-size: 13px;
 	color: black;
 	margin-top: 0px;
 }
 
 .paragraph2 {
 	font-family: Source Sans Pro;
-	font-size: 14px;
+	font-size: 13px;
 	color: black;
 	margin-top: 0px;
 }
 
 .paragraph3 {
 	font-family: Source Sans Pro;
-	font-size: 14px;
+	font-size: 13px;
 	color: black;
 	margin-top: 0px;
 }
