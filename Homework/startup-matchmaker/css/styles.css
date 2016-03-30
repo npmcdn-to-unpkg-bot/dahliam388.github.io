@@ -50,21 +50,56 @@ header nav a:hover {
 #hoverbox {
 	float: right;
 	background-color: white;
+	width: 325px;
+	height: 250px;
+	padding-right: 20px;
+	padding-left: 40px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	margin: 30px;
+	overflow: auto;
 }
 
 #hoverbox h2 {
-	font-family: Merriweather, serif;
-	font-size: 22px;
+	font-family: Source Sans Pro;
+	font-size: 25px;
 	font-style: bold;
 	color: black;
 	margin-bottom: 0px;
 }
 
-article h3 {
+#hoverbox h4 {
+	text-align: center;
+	font-style: bold;
+	font-family: Oswald;
+	padding: 10px;
+	background-color: yellow;
+}
+
+#hoverbox p {
+	font-family: Source Sans Pro;
+	line-height: 1.4;
+	margin-top: 10px;
+}
+
+#article1 {
+	float: left;
+}
+
+#article2 {
+	float: left;
+}
+
+#article3 {
+	float: left;
+}
+
+section h3 {
 	font-family: Merriweather, serif;
-	font-size: 22px;
+	font-size: 19px;
 	color: black;
 	margin-bottom: 0px;
+	text-align: left;
 }
 
 .paragraph1 {
