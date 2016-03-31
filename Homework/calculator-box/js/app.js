@@ -1,4 +1,5 @@
 // 1. Besure to write your code within the $(document).ready(...)
+$(document).ready(function(){
 // 2. Add .click() event handlers for each of the boxes:
 // - A) boxes #a10, #a20, and #a30 should each add 10, 20, and 30, respectively, to the value in the center box, #out
 // - B) boxes #n10, #n20, and #n30 should each subtract 10, 20, and 30, respectively, from the value in the center box, #out
