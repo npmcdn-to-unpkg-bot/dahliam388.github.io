@@ -50,7 +50,7 @@ header nav a:hover {
 
 #hoverbox {
 	float: right;
-	background-color: white;
+	background-color: rgba(255,255,255, 0.8);
 	width: 325px;
 	height: 250px;
 	padding-right: 20px;
@@ -63,7 +63,7 @@ header nav a:hover {
 
 #hoverbox h2 {
 	font-family: Source Sans Pro;
-	font-size: 25px;
+	font-size: 27px;
 	font-style: bold;
 	color: black;
 	margin-bottom: 0px;
@@ -71,9 +71,8 @@ header nav a:hover {
 
 #hoverbox h4 {
 	text-align: center;
-	font-style: bold;
 	font-family: Oswald;
-	padding: 11px;
+	padding: 12px;
 	background-color: yellow;
 }
 
@@ -83,15 +82,23 @@ header nav a:hover {
 	margin-top: 10px;
 }
 
+section h3 {
+	font-family: Merriweather, serif;
+	font-size: 18px;
+	color: black;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
 #article1 {
 	float: left;
 	width: 200px;
 	margin-top: 20px;
 	margin-left: 30px;
 	line-height: 1.4;
-	padding-right: 15px;
+	padding-right: 30px;
 	width: 250px;
-	border-right: solid 2px gray; 
+	border-right: solid 1px lightgray; 
 }
 
 #article2 {
@@ -100,9 +107,9 @@ header nav a:hover {
 	margin-top: 20px;
 	margin-left: 30px;
 	line-height: 1.4;
-	padding-right: 15px;
+	padding-right: 30px;
 	width: 250px;
-	border-right: solid 2px gray; 
+	border-right: solid 1px lightgray; 
 }
 
 #article3 {
@@ -112,15 +119,6 @@ header nav a:hover {
 	margin-left: 30px;
 	line-height: 1.4;
 	width: 250px;
-	border-right: solid 2px gray; 
-}
-
-section h3 {
-	font-family: Merriweather, serif;
-	font-size: 18px;
-	color: black;
-	margin-bottom: 5px;
-	text-align: left;
 }
 
 .paragraph1 {
@@ -142,4 +140,12 @@ section h3 {
 	font-size: 14px;
 	color: black;
 	margin-top: 0px;
+}
+
+.button {
+	text-align: center;
+	background-color: lightgray;
+	font-family: Oswald;
+	padding: 12px;
+	font-size: 14px;
 }
