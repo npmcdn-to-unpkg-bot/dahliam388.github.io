@@ -16,5 +16,14 @@ $('#fourth').click(function () {
 	$('#bigimage').attr('src', 'img/4.jpg')
 })
 
-
 //replace .click with .mouseover for the change to take place by hover instead of by click.
+
+
+//-------------------------------------------------------------------
+
+//BELOW SAME SOLUTION USING THIS//
+
+//$('.thumb').click(function () {
+	//var newSrc = $(this).attr('src');
+	//$('#bigimage').attr('src', newSrc);
+//})
