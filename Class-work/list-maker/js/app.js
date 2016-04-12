@@ -13,8 +13,11 @@
 $(document).ready(function () {
 
 	// 1. Attach a .click() event to #clickme; attach an anonymous function to the .click()
+	$('#submit').click(function () {
 	// 1A. This anonymous function should create a variable, newItem equal to the value of #item
+	var newItem = $('#item').val()
 	// 1B. This anonymous function should call a separate function, appendItem, and pass it the variable newItem
+	$('#append').click(function () {
 	// 1C. This anonymous function should then clear the text inside of #item
 
 	// 2. Write the appendItem function here
