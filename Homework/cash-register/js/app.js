@@ -12,7 +12,6 @@
 // 5: Append a new <tr></tr> to the <tbody id="entries"> containing two <td>'s, one of which contains the new variable: <tr><td></td><td>NEW VALUE</td></tr>
 // 6: Figure out a way to update the number in #total (Hint: look back at the calculator box example)
 // 7: Empty the input in #newEntry (clear it out)
-
 $(document).ready(function () {
 
 })
