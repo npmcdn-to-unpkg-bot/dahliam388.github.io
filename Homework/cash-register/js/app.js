@@ -13,5 +13,21 @@
 // 6: Figure out a way to update the number in #total (Hint: look back at the calculator box example)
 // 7: Empty the input in #newEntry (clear it out)
 $(document).ready(function () {
+	
+	var total = 0;
 
+	$('#entry').submit(function (event) {
+		event.preventDefault()
+		
+		var newValue = $('#newEntry').val()
+		var parsedValue = parseFloat(newValue)
+		
+		$('#entries').append('<tr><td></td><td>' + parsedValue + '</td></tr>');
+
+		total = total + parsedValue;
+		
+		$('#total').html('$' + total)
+		
+		$('#newEntry').val('')
+	})
 })
