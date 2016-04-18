@@ -28,10 +28,17 @@ header nav a {
 
 section {
 	background-color: black;
+	overflow: auto;
+	width: 940px;
+	padding: 10px;
 }
 
 article {
 	background-color: white;
+	width: 465px;
+	float: left;
+	padding: 10px;
+	box-sizing: border-box;
 }
 
 /* targets the 1st article; nth-child(2) would target the 2nd article*/
