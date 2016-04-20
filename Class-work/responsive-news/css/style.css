@@ -105,8 +105,11 @@ p {
 
 /* MEDIA QUERIES */
 @media (max-width: 480px) {
-	#container {
+	#container, .nav, #hero, #articles {
 		width: 100%;
+		overflow: auto;
 	}
+
+
 }
 

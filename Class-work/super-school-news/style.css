@@ -1,5 +1,5 @@
 .container {
-	width: 960px;
+	width: 85%;
 	margin: 0 auto;
 }
 
@@ -49,4 +49,24 @@ article h1 {
 	font-size: 20px;
 	text-align: center;
 	padding: 5px 0;
+}
+
+@media (max-width: 480px) {
+	body {
+		background: blue;
+	}
+
+	h1, nav, article {
+		float: none;
+		width :100%;
+		text-align: center;
+	}
+	article:nth-child(2) {
+	margin-right: 10px;
+	}
+
+	header nav a {
+		margin-left: 5px;
+		padding-right: none;
+	}
 }
