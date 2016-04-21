@@ -38,17 +38,16 @@
         <a href="#">CONTACT</a>
     </nav>
     <div id="map"></div>
-    <script>
-
-      // This example creates a 2-pixel-wide red polyline showing the path
-
-      function initMap() {
+<script>
+      
+  function initMap() {
+        var map;
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 5,
           center: {lat: 46, lng: -355},
           mapTypeId: google.maps.MapTypeId.TERRAIN
         });
-
+    // polylines 
         var flightPlanCoordinates = [
           {lat: 51.5074, lng: 0.1278}, //London
           {lat: 50.8503, lng: 4.3517}, //Bruss
@@ -64,17 +63,62 @@
           {lat: 43.7384, lng: 7.4246}, //Monaco
           {lat: 48.8566, lng: 2.3522} //Paris     
         ];
-        var flightPath = new google.maps.Polyline({
-          path: flightPlanCoordinates,
-          geodesic: true,
-          strokeColor: '#FF0000',
-          strokeOpacity: 1.0,
-          strokeWeight: 1.5
-        });
-
-        flightPath.setMap(map);
-      }
-
+    // Marker tooltip text
+        var locationName = ['London','Brussls','Amsterdam',
+          'Rudesheim','switzerland', 'Munich','Vienna',
+          'Salzburg','Venice','Rome','Florence','Monaco','Paris'];
+    // content box info
+        var LondoncontentString = '<div id="content">'+
+            '<div id="siteNotice">'+
+            '</div>'+
+            '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+            '<div id="bodyContent">'+
+            '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+            'sandstone rock formation in the southern part of the '+
+            'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+            'south west of the nearest large town, Alice Springs; 450&#160;km '+
+            '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+            'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+            'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+            'Aboriginal people of the area. It has many springs, waterholes, '+
+            'rock caves and ancient paintings. Uluru is listed as a World '+
+            'Heritage Site.</p>'+
+            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+            'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+            '(last visited June 22, 2009).</p>'+
+            '</div>'+
+            '</div>';
+    //info Windows
+        var infowindow = new google.maps.InfoWindow({
+              content: LondoncontentString
+          });
+    // Markers
+  
+          var londonMarker = new google.maps.Marker({
+             position: flightPlanCoordinates[0],
+             map: map,
+             title: locationName[0]
+          }); 
+          var marker = new google.maps.Marker({
+             position: flightPlanCoordinates[1],
+             map: map,
+             title: locationName[1]  
+          });
+    // infowindow events
+          londonMarker.addListener('click', function() {
+             infowindow.open(map, londonMarker);
+          });
+  
+    //Map rendering
+          var flightPath = new google.maps.Polyline({
+            path: flightPlanCoordinates,
+            geodesic: true,
+            strokeColor: '#FF0000',
+            strokeOpacity: 1.0,
+            strokeWeight: 1.5
+          });
+          flightPath.setMap(map); 
+  }
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuAdd9SHpWIxorpo8XQb6kTCbz0Mq9P9k&callback=initMap">

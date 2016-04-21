@@ -28,3 +28,41 @@ header nav a {
 	font-size: 20px;
 	margin-left: 50px;
 }
+
+
+#mobile-nav a {
+	display: block;
+	background-color: lightgray;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+}
+
+#mobile-nav a:hover {
+	background-color: black;
+	color: white;
+}
+
+#burger {
+	display: none;
+}
+
+#mobile-nav {
+	display: none;
+}
+
+@media (max-width: 874px) {
+	#large-nav {
+		display: none;
+	}
+
+	#burger {
+		display: block;
+		float: right;
+		margin-top: 5px;
+		cursor: pointer;
+	}
+}
