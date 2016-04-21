@@ -93,7 +93,6 @@
               content: LondoncontentString
           });
     // Markers
-  
           var londonMarker = new google.maps.Marker({
              position: flightPlanCoordinates[0],
              map: map,
@@ -104,11 +103,21 @@
              map: map,
              title: locationName[1]  
           });
+    // Marker events
+          map.addListener('center_changed', function() {
+    // 3 secs after the center of the map has changed, pan back to marker.
+          window.setTimeout(function() {
+          map.panTo(londonMarker.getPosition());
+          }, 3000);
+          });
+          londonMarker.addListener('click', function() {
+              map.setZoom(8);
+              map.setCenter(londonMarker.getPosition());
+          });
     // infowindow events
           londonMarker.addListener('click', function() {
              infowindow.open(map, londonMarker);
           });
-  
     //Map rendering
           var flightPath = new google.maps.Polyline({
             path: flightPlanCoordinates,
