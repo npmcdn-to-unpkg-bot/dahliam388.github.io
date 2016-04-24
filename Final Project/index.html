@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>Simple Polylines</title>
@@ -13,48 +14,51 @@
       nav {
         display: block;
         background-color: black;
-        padding: 9px;
+        padding: 12px;
         text-align: center;
         border-bottom: solid 1.9px gray;
+        width: 100%;
       }
       nav a {
         color: white;
-        padding-right: 50px;
-        font-size: 16px;
+        padding-right: 40px;
+        font-size: 14px;
         text-decoration: none;
         font-family: sans-serif;
       }
       nav a:hover {
         color: darkgray;
       }
-      #h1 {
+      #h1 h1 {
         text-align: center;
-        font-family: sans-serif;
-        font-size: 19px;
-        font-style: italic;
-        padding-bottom: 0px;
-        margin-bottom: 0px; 
-        padding-top: 1px;
+        background: url(./Images/cream.jpg);
+        font-family: 'Oleo Script', sans-serif;
+        font-size: 60px;
+        font-weight: 400;
+        padding: 14px;
+        margin: 0;
+        color: brown;
+        overflow: auto;
       }
       #map {
-        height: 80%;
-        margin-top: 20px;
+        height: 70%;
+        overflow: auto;
       }
       #main {
-        background: url(./Images/colosseum.jpg);
-        overflow: auto;
-        height: 500px;
+        background: url(./Images/cream.jpg);
         background-size: cover;
+        height: 700px;
+        overflow: auto;
     </style>
   </head>
   <body>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Preparation</a>
-        <a href="#">Tour Info</a>
-        <a href="#">Contact</a>
+        <a href="#">HOME</a>
+        <a href="#">PREPARATION</a>
+        <a href="#">TOUR INFO</a>
+        <a href="#">CONTACT</a>
     </nav>
-  <div id="h1"><h1>ADVENTURE AWAITS!</h1></div>
+  <div id="h1"><h1>Adventure Awaits!</h1></div>
   <div id="map"></div>
   <div id="main"></div>
 <script>
@@ -63,7 +67,7 @@
         var map;
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 5,
-          center: {lat: 46, lng: -355},
+          center: {lat: 47.5, lng: -355},
           mapTypeId: google.maps.MapTypeId.TERRAIN
         });
     // polylines 
@@ -121,17 +125,6 @@
              position: flightPlanCoordinates[1],
              map: map,
              title: locationName[1]  
-          });
-    // Marker events
-          map.addListener('center_changed', function() {
-    // 3 secs after the center of the map has changed, pan back to marker.
-          window.setTimeout(function() {
-          map.panTo(londonMarker.getPosition());
-          }, 3000);
-          });
-          londonMarker.addListener('click', function() {
-              map.setZoom(8);
-              map.setCenter(londonMarker.getPosition());
           });
     // infowindow events
           londonMarker.addListener('click', function() {
