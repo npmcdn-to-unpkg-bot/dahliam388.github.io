@@ -12,33 +12,51 @@
       }
       nav {
         display: block;
-        background-color: white;
-        padding: 7px;
+        background-color: black;
+        padding: 9px;
         text-align: center;
         border-bottom: solid 1.9px gray;
       }
       nav a {
-        color: black;
+        color: white;
         padding-right: 50px;
+        font-size: 16px;
         text-decoration: none;
         font-family: sans-serif;
       }
       nav a:hover {
-        color: red;
+        color: darkgray;
+      }
+      #h1 {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 19px;
+        font-style: italic;
+        padding-bottom: 0px;
+        margin-bottom: 0px; 
+        padding-top: 1px;
       }
       #map {
-        height: 100%;
+        height: 80%;
+        margin-top: 20px;
       }
+      #main {
+        background: url(./Images/colosseum.jpg);
+        overflow: auto;
+        height: 500px;
+        background-size: cover;
     </style>
   </head>
   <body>
     <nav>
-        <a href="#">HOME</a>
-        <a href="#">PREPARATION</a>
-        <a href="#">ADVENTURE</a>
-        <a href="#">CONTACT</a>
+        <a href="#">Home</a>
+        <a href="#">Preparation</a>
+        <a href="#">Tour Info</a>
+        <a href="#">Contact</a>
     </nav>
-    <div id="map"></div>
+  <div id="h1"><h1>ADVENTURE AWAITS!</h1></div>
+  <div id="map"></div>
+  <div id="main"></div>
 <script>
       
   function initMap() {
