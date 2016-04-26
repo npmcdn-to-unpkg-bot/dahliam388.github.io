@@ -1,0 +1,22 @@
+.wrapper {
+	text-align: center;
+}
+
+header {
+	background: blue;
+	position: fixed;
+	width: 100%;
+	height: 30px;
+	top: 0;
+	transition: background 2s;
+}
+
+body {
+	margin-top: 30px;
+}
+
+.scrolled {
+	background: red
+	font-size: 30px;
+	color: white;
+}
