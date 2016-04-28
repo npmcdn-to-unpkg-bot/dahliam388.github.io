@@ -126,7 +126,7 @@
           {lat: 48.8566, lng: 2.3522} //Paris     
         ];
     // Marker tooltip text
-        var locationName = ['London','Brussls','Amsterdam',
+        var locationName = ['London','Brussels','Amsterdam',
           'Rudesheim','Lucerne', 'Munich','Vienna',
           'Salzburg','Venice','Rome','Florence','Monaco','Paris'];
     // content box info
@@ -135,7 +135,7 @@
             '<p><h3>Land of the Free</h3></p>'+
             '</div>'+
             '</div>';
-        var BrusslscontentString = '<div id="content">'+
+        var BrusselscontentString = '<div id="content">'+
             '<h2 class="firstHeading">Brussels</h2>'+
             '<p><h3>Land of the Waffles</h3></p>'+
             '</div>'+
@@ -199,41 +199,8 @@
         var londoninfowindow = new google.maps.InfoWindow({
               content: LondoncontentString
           });
-        var brusslsinfowindow = new google.maps.InfoWindow({
-              content: BrusslscontentString
-          });
-        var amsterdaminfowindow = new google.maps.InfoWindow({
-              content: AmsterdamcontentString
-          });
-        var rudesheiminfowindow = new google.maps.InfoWindow({
-              content: RudesheimcontentString
-          });
-        var lucerneinfowindow = new google.maps.InfoWindow({
-              content: LucernecontentString
-          });
-        var munichinfowindow = new google.maps.InfoWindow({
-              content: MunichcontentString
-          });
-        var viennainfowindow = new google.maps.InfoWindow({
-              content: ViennacontentString
-          });
-        var salzburginfowindow = new google.maps.InfoWindow({
-              content: SalzburgcontentString
-          });
-        var veniceinfowindow = new google.maps.InfoWindow({
-              content: VenicecontentString
-          });
-        var romeinfowindow = new google.maps.InfoWindow({
-              content: RomecontentString
-          });
-        var florenceinfowindow = new google.maps.InfoWindow({
-              content: FlorencecontentString
-          });
-        var monacoinfowindow = new google.maps.InfoWindow({
-              content: MonacocontentString
-          });
-        var parisinfowindow = new google.maps.InfoWindow({
-              content: PariscontentString
+        var infowindow = new google.maps.InfoWindow({
+              content: BrusselscontentString
           });
     // Markers
           var londonMarker = new google.maps.Marker({
@@ -241,62 +208,62 @@
              map: map,
              title: locationName[0]
           }); 
-          var brusslsMarker = new google.maps.Marker({
+          var brusselsMarker = new google.maps.Marker({
              position: flightPlanCoordinates[1],
              map: map,
              title: locationName[1]  
           });
-          var amsterdammarker = new google.maps.Marker({
+          var amsterdamMarker = new google.maps.Marker({
              position: flightPlanCoordinates[2],
              map: map,
              title: locationName[2]  
           });
-          var rudesheimmarker = new google.maps.Marker({
+          var marker = new google.maps.Marker({
              position: flightPlanCoordinates[3],
              map: map,
              title: locationName[3]  
           });
-          var lucernemarker = new google.maps.Marker({
+          var marker = new google.maps.Marker({
              position: flightPlanCoordinates[4],
              map: map,
              title: locationName[4]  
           });
-          var munichmarker = new google.maps.Marker({
+          var marker = new google.maps.Marker({
              position: flightPlanCoordinates[5],
              map: map,
              title: locationName[5]  
           });
-          var viennamarker = new google.maps.Marker({
+          var marker = new google.maps.Marker({
              position: flightPlanCoordinates[6],
              map: map,
              title: locationName[6]  
           });
-          var salzburgmarker = new google.maps.Marker({
+          var marker = new google.maps.Marker({
              position: flightPlanCoordinates[7],
              map: map,
              title: locationName[7]  
           });
-          var venicemarker = new google.maps.Marker({
+          var marker = new google.maps.Marker({
              position: flightPlanCoordinates[8],
              map: map,
              title: locationName[8]  
           });
-          var romemarker = new google.maps.Marker({
+          var marker = new google.maps.Marker({
              position: flightPlanCoordinates[9],
              map: map,
              title: locationName[9]  
           });
-          var florencemarker = new google.maps.Marker({
+          var marker = new google.maps.Marker({
              position: flightPlanCoordinates[10],
              map: map,
              title: locationName[10]  
           });
-          var monacomarker = new google.maps.Marker({
+          var marker = new google.maps.Marker({
              position: flightPlanCoordinates[11],
              map: map,
              title: locationName[11]  
           });
-          var parismarker = new google.maps.Marker({
+          var marker = new google.maps.Marker({
              position: flightPlanCoordinates[12],
              map: map,
              title: locationName[12]  
@@ -305,41 +272,11 @@
           londonMarker.addListener('click', function() {
              londoninfowindow.open(map, londonMarker);
           });
-          brusslsMarker.addListener('click', function() {
-             brusslsinfowindow.open(map, brusslsMarker);
+          brusselsMarker.addListener('click', function() {
+             infowindow.open(map, brusselsMarker);
           });
           amsterdamMarker.addListener('click', function() {
-             amsterdaminfowindow.open(map, amsterdamMarker);
-          });
-          rudesheimMarker.addListener('click', function() {
-             rudesheiminfowindow.open(map, rudesheimMarker);
-          });
-          lucerneMarker.addListener('click', function() {
-             lucerneinfowindow.open(map, lucerneMarker);
-          });
-          munichMarker.addListener('click', function() {
-             munichinfowindow.open(map, munichMarker);
-          });
-          viennaMarker.addListener('click', function() {
-             viennainfowindow.open(map, viennaMarker);
-          });
-          salzburgMarker.addListener('click', function() {
-             salzburginfowindow.open(map, salzburgMarker);
-          });
-          veniceMarker.addListener('click', function() {
-             veniceinfowindow.open(map, veniceMarker);
-          });
-          romeMarker.addListener('click', function() {
-             romeinfowindow.open(map, romeMarker);
-          });
-          florenceMarker.addListener('click', function() {
-             florenceinfowindow.open(map, florenceMarker);
-          });
-          monacoMarker.addListener('click', function() {
-             monacoinfowindow.open(map, monacoMarker);
-          });
-          parisMarker.addListener('click', function() {
-             parisinfowindow.open(map, parisMarker);
+             infowindow.open(map, amsterdamMarker);
           });
     //Map rendering
           var flightPath = new google.maps.Polyline({
