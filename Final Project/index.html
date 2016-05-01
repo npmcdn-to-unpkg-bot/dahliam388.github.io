@@ -10,22 +10,17 @@
       html, body {
         height: 100%;
         padding: 0;
+        margin: 0;
       }
       header {
-        position: fixed;
         width: 100%;
-        top: 0;
         height: 50px;
       }
       nav {
-        display: block;
-        background-color: black;
+        background-color: dimgray;
         padding: 12px;
         text-align: center;
         width: 100%;
-      }
-      body {
-        margin-top: 40px;
       }
       nav a {
         color: white;
@@ -36,56 +31,53 @@
         font-weight: 700;
       }
       nav a:hover {
-        color: gray;
+        color: lightgray;
         font-family: 'Lato';
         font-weight: 700;
       }
       #heading h1 {
         text-align: center;
         font-family: 'Oleo Script', sans-serif;
-        font-size: 49px;
-        font-weight: 400;
+        font-size: 44px;
         padding-top: 14px;
-        padding-bottom: 7px;
+        padding-bottom: 10px;
         padding-left: 280px;
         text-align: center;
+        font-weight: 400;
         margin: 0;
-        color: brown;
+        color: #FF3F3C;
         float: left;
       }
       #subheading h4 {
-        color: black;
+        color: white;
         float: left;
         padding-left: 17px;
-        font-size: 25px;
+        font-size: 23px;
         font-weight: 300px;
         margin-top: 35.5px;
         margin-bottom: 0;
         font-family: 'Lato';
         font-style: italic;
       }
-      #mapbgrnd {
-
-      }
       #map {
-        background-size: cover;
-        height: 74%;
+        height: 63%;
         width: 100%;
       }
       #main {
-        background-image: url(./images/creampaper.jpg);
+        background-color: black;
         overflow: auto;
         width: 100%;
+        margin-top: -6.5px;
       }
       #section {
-        background-color: brown;
+        background-image: url(./Images/creampaper.jpg);
         background-size: cover;
         height: 50%;
         width: 100%;
         margin-top: 0;
         overflow: auto;
       }
-    </style>
+  </style>
   </head>
   <body>
   <header>
@@ -100,7 +92,9 @@
   <div id="heading"><h1>Adventure Awaits!</h1></div>
   <div id="subheading"><h4>My 3-Week European Adventure</h4></div>
   </div>
+
   <div id="map"></div>
+
   <div id="section">
   <p><h5>jhsjdhnckjsk</h5></p>
   </div>
@@ -110,7 +104,7 @@
         var map;
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 5,
-          center: {lat: 47.9, lng: -365},
+          center: {lat: 48, lng: -353},
           mapTypeId: google.maps.MapTypeId.TERRAIN
         });
     // polylines 
