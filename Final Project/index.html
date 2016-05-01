@@ -45,8 +45,8 @@
         font-family: 'Oleo Script', sans-serif;
         font-size: 49px;
         font-weight: 400;
-        padding-top: 6px;
-        padding-bottom: 3px;
+        padding-top: 14px;
+        padding-bottom: 7px;
         padding-left: 280px;
         text-align: center;
         margin: 0;
@@ -56,18 +56,21 @@
       #subheading h4 {
         color: black;
         float: left;
-        padding-left: 18px;
+        padding-left: 17px;
         font-size: 25px;
         font-weight: 300px;
-        margin-top: 25px;
+        margin-top: 35.5px;
         margin-bottom: 0;
         font-family: 'Lato';
         font-style: italic;
       }
+      #mapbgrnd {
+
+      }
       #map {
+        background-size: cover;
         height: 74%;
         width: 100%;
-        margin-bottom: 0;
       }
       #main {
         background-image: url(./images/creampaper.jpg);
@@ -75,11 +78,12 @@
         width: 100%;
       }
       #section {
-        background-image: url(./images/creampaper.jpg);
+        background-color: brown;
         background-size: cover;
         height: 50%;
         width: 100%;
         margin-top: 0;
+        overflow: auto;
       }
     </style>
   </head>
@@ -106,7 +110,7 @@
         var map;
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 5,
-          center: {lat: 47.5, lng: -355},
+          center: {lat: 47.9, lng: -365},
           mapTypeId: google.maps.MapTypeId.TERRAIN
         });
     // polylines 
