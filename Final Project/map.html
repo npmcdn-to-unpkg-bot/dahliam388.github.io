@@ -117,79 +117,6 @@
         var locationName = ['London','Brussels','Amsterdam',
           'Rudesheim','Lucerne', 'Munich','Vienna',
           'Salzburg','Venice','Rome','Florence','Monaco','Paris'];
-    // content box info
-        var LondoncontentString = '<div id="content">'+
-            '<h2 class="firstHeading">London</h2>'+
-            '<p><h3>Land of the Free</h3></p>'+
-            '</div>'+
-            '</div>';
-        var BrusselscontentString = '<div id="content">'+
-            '<h2 class="firstHeading">Brussels</h2>'+
-            '<p><h3>Land of the Waffles</h3></p>'+
-            '</div>'+
-            '</div>';
-        var AmsterdamcontentString = '<div id="content">'+
-            '<h2 class="firstHeading">Amsterdam</h2>'+
-            '<p><h3>Land of the Waffles</h3></p>'+
-            '</div>'+
-            '</div>';
-        var RudesheimcontentString = '<div id="content">'+
-            '<h2 class="firstHeading">Rudesheim</h2>'+
-            '<p><h3>Land of the Waffles</h3></p>'+
-            '</div>'+
-            '</div>';
-        var LucernecontentString = '<div id="content">'+
-            '<h2 class="firstHeading">Lucerne</h2>'+
-            '<p><h3>Land of the Waffles</h3></p>'+
-            '</div>'+
-            '</div>';
-        var MunichcontentString = '<div id="content">'+
-            '<h2 class="firstHeading">Munich</h2>'+
-            '<p><h3>Land of the Waffles</h3></p>'+
-            '</div>'+
-            '</div>';
-        var ViennacontentString = '<div id="content">'+
-            '<h2 class="firstHeading">Vienna</h2>'+
-            '<p><h3>Land of the Waffles</h3></p>'+
-            '</div>'+
-            '</div>';
-        var SalzburgcontentString = '<div id="content">'+
-            '<h2 class="firstHeading">Salzburg</h2>'+
-            '<p><h3>Land of the Waffles</h3></p>'+
-            '</div>'+
-            '</div>';
-        var VenicecontentString = '<div id="content">'+
-            '<h2 class="firstHeading">Venice</h2>'+
-            '<p><h3>Land of the Waffles</h3></p>'+
-            '</div>'+
-            '</div>';
-        var RomecontentString = '<div id="content">'+
-            '<h2 class="firstHeading">Rome</h2>'+
-            '<p><h3>Land of the Waffles</h3></p>'+
-            '</div>'+
-            '</div>';
-        var FlorencecontentString = '<div id="content">'+
-            '<h2 class="firstHeading">Florence</h2>'+
-            '<p><h3>Land of the Waffles</h3></p>'+
-            '</div>'+
-            '</div>'; 
-        var MonacocontentString = '<div id="content">'+
-            '<h2 class="firstHeading">Monaco</h2>'+
-            '<p><h3>Land of the Waffles</h3></p>'+
-            '</div>'+
-            '</div>';
-        var PariscontentString = '<div id="content">'+
-            '<h2 class="firstHeading">Paris</h2>'+
-            '<p><h3>Land of the Waffles</h3></p>'+
-            '</div>'+
-            '</div>';       
-    //info Windows
-        var londoninfowindow = new google.maps.InfoWindow({
-              content: LondoncontentString
-          });
-        var infowindow = new google.maps.InfoWindow({
-              content: BrusselscontentString
-          });
     // Markers
           var londonMarker = new google.maps.Marker({
              position: flightPlanCoordinates[0],
@@ -199,7 +126,7 @@
           var brusselsMarker = new google.maps.Marker({
              position: flightPlanCoordinates[1],
              map: map,
-             title: locationName[1]  
+             title: locationName[1] 
           });
           var amsterdamMarker = new google.maps.Marker({
              position: flightPlanCoordinates[2],
@@ -254,18 +181,8 @@
           var marker = new google.maps.Marker({
              position: flightPlanCoordinates[12],
              map: map,
-             title: locationName[12]  
-          });
-    // infowindow events
-          londonMarker.addListener('click', function() {
-             londoninfowindow.open(map, londonMarker);
-          });
-          brusselsMarker.addListener('click', function() {
-             infowindow.open(map, brusselsMarker);
-          });
-          amsterdamMarker.addListener('click', function() {
-             infowindow.open(map, amsterdamMarker);
-          });
+             title: locationName[12]
+           });
     //Map rendering
           var flightPath = new google.maps.Polyline({
             path: flightPlanCoordinates,
