@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <title>Lightbox Example</title>
+  <link rel="stylesheet" href="lightbox.css">
+
     <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,300italic,300,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
     
@@ -25,7 +27,7 @@
         font-size: 12.5px;
         text-decoration: none;
         font-family: 'Lato', sans-serif;
-        font-weight: 400;
+        font-weight: 700;
         margin: 5px;
         padding: 11px;
         text-align: center;
@@ -42,7 +44,7 @@
         padding-bottom: 10px;
         padding-left: 280px;
         text-align: center;
-        font-weight: 400;
+        font-weight: 700;
         margin: 0;
         color: #FF3F3C;
         float: left;
@@ -52,7 +54,7 @@
         float: left;
         padding-left: 17px;
         font-size: 25px;
-        font-weight: 300px;
+        font-weight: 400;
         margin-top: 34px;
         margin-bottom: 0;
         font-family: 'Lato';
@@ -64,21 +66,32 @@
         width: 100%;
         margin-top: -11px;
       }
+      #section {
+        background-color: white;
+        height: 50%;
+        width: 100%;
+        margin-top: 0;
+        overflow: auto;
+      }
   </style>
-  </head>
-  <body>
-  <header>
-    <nav>
-        <a href="index.html">HOME</a>
-        <a href="map.html">MAP</a>
-        <a href="gallery.html">GALLERY</a>
-        <a href="#">CONTACT</a>
-    </nav>
-    </header>
-    <div id="main">
-  <div id="heading"><h1>Adventure Awaits!</h1></div>
-  <div id="subheading"><h4>My 3-Week European Adventure</h4></div>
-  </div>
 
-  </body>
+<body>
+<a href="images/chicken-nose.png" data-lightbox="image-1">
+  <img src="images/chicken-nose.png" alt=""> </a>
+
+<a href="images/chicken-nose.png" data-lightbox="image-2">
+  <img src="images/ghostly-zoots.png" alt=""> </a>
+  
+<a href="images/chicken-nose.png" data-lightbox="image-3">
+  <img src="images/lil-mib.png" alt="">
+  <img src="images/loopy-lou.png" alt="">
+  <img src="images/mr-purple.png" alt="">
+  <img src="images/patrick-carney.png" alt="">
+  <img src="images/shaka-khan.png" alt="">
+  <img src="images/zoots.png" alt="">
+
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="js/lightbox.js"></script>
+  <script src="app.js"></script>
+</body>
 </html>
