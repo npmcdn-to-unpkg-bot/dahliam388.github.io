@@ -129,7 +129,6 @@
   color: white;
   width: 100%;
   height: 100%;
-  margin-top: -9px;
 }
 #container {
   padding-left: 11%;
@@ -178,8 +177,9 @@ section {
   background-color: black;
   width: 100%;
   height: 10%;
-  margin-top: .5%;
   text-align: center;
+  margin-top: 0;
+  padding-top: 0;
 }
 #footer a {
   text-align: center;
@@ -187,8 +187,8 @@ section {
   font-weight: 400;
   font-size: 30px;
   color: white;
-  padding-top: 8%;
   text-decoration: none;
+  padding-top: 10px;
 }
 #footer a:hover {
   font-family: 'Oleo Script';
