@@ -53,6 +53,7 @@
       }
       #main {
         background-color: black;
+        background-size: cover;
         overflow: auto;
         width: 100%;
         margin-top: -11px;
@@ -69,19 +70,11 @@
         background-size: cover;
         overflow: auto;
       }
-      section {
-        background-color: white;
-        height: 50%;
-        width: 100%;
-        margin-top: 0;
-        overflow: auto;
-      }
-
 #article1 {
   float: left;
   width: 200px;
   margin-top: 20px;
-  margin-left: 60px;
+  margin-left: 75px;
   line-height: 1.4;
   padding-right: 50px;
   width: 250px;
@@ -90,9 +83,9 @@
 
 #article2 {
   float: left;
-  width: 200px;
+  width: 250px;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 60px;
   line-height: 1.4;
   padding-right: 50px;
   width: 250px;
@@ -101,9 +94,9 @@
 
 #article3 {
   float: left;
-  width: 200px;
+  width: 250px;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 60px;
   line-height: 1.4;
   width: 250px;
 }
@@ -137,7 +130,7 @@
   background-color: firebrick;
   color: white;
   width: 80%;
-  margin-top: 0;
+  margin-top: -5px;
 }
 .button, p {
   padding-top: 4px;
@@ -145,4 +138,25 @@
   font-family: 'Oleo Script';
   font-size: 20px;
   font-weight: 400;
+}
+#sectioncontact {
+  padding-left: 23.5%;
+  margin-top: 30px;
+  font-size: 16px;
+  color: firebrick;
+  font-weight: 700;
+  font-style: italic;
+  font-family: 'Lato';
+}
+body {
+  background-image: url(./Images/creampaper.jpg); 
+  background-size: cover;
+}
+section {
+  background-image: url(./Images/creampaper.jpg); 
+  background-size: cover;
+  height: 50%;
+  width: 100%;
+  margin-top: 0;
+  overflow: auto;
 }
