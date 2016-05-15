@@ -20,12 +20,15 @@ body
    font-family: 'Lato';
 }
 
-h2
+h4
 {
    padding-left: 5%;
    display: block;
    color: #FCB720;
    margin-bottom: 6px;
+   font-family: 'Lato';
+   font-weight: 700;
+   font-size: 20px;
 }
 
 a
