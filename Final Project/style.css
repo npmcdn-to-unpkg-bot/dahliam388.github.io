@@ -4,7 +4,7 @@
         margin: 0;
       }
       body {
-        background-image: url(./Images/creampaper.jpg); 
+        background-color: white; 
         background-size: cover;
         height: 100%;
       }
@@ -15,11 +15,10 @@
       nav {
         background-color: #183A8F;
         background-size: cover;
-        padding-top: 1%;
-        padding-bottom: 1%;
         text-align: center;
         width: 100%;
-        margin-bottom: 0;
+        margin-bottom: none;
+        padding: 12px 12px;
       }
       nav a {
         color: white;
@@ -64,7 +63,7 @@
         overflow: auto;
         width: 100%;
         padding-left: 21%;
-        margin-top: -.5%;
+        margin-bottom: 0;
       }
       #map {
         height: 70%;
@@ -72,9 +71,9 @@
       }
 	    #venice {
         margin-top: 1.5px;
-        height:63%;
+        height:75%;
         width:100%;
-        background-image: url(./Images/ven1.jpg);
+        background-image: url(./Images/Venice/ven5.jpg);
         background-size: cover;
         overflow: auto;
       }
@@ -145,15 +144,6 @@
   text-decoration: none;
   text-align: center;
 }
-#sectioncontact {
-  padding-left: 21%;
-  margin-top: 30px;
-  font-size: 16px;
-  color: firebrick;
-  font-weight: 700;
-  font-style: italic;
-  font-family: 'Lato';
-}
 section {
   background-image: url(./Images/creampaper.jpg); 
   background-size: cover;
@@ -162,23 +152,11 @@ section {
   margin-top: 0;
   overflow: auto;
 }
-#lightbox {
-  padding-left: 11%;
-  height: 100%;
-  width: 100%;
-}
-#lightbox, h3 {
-  font-family: 'Oleo Script';
-  font-weight: 400;
-  text-align: left;
-  font-size: 27px;
-}
 #footer {
   background-color: black;
-  width: 100%;
-  height: 10%;
+background-size: cover;
   text-align: center;
-  margin-top: 0;
+  margin-top: -1.7%;
   padding-top: 0;
 }
 #footer a {

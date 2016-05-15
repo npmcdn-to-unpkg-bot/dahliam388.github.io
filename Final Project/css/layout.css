@@ -11,11 +11,12 @@
    display: block;
    max-width: 90%;
    margin: 0 auto;
+   background-color: gray;
 }
 
 body
 {
-   background-color: #060C10;
+   background-color: lightgray;
    color: #FFFFFF;
    font-family: 'Lato';
 }
@@ -24,7 +25,7 @@ h4
 {
    padding-left: 5%;
    display: block;
-   color: navy;
+   color: firebrick;
    margin-bottom: 6px;
    font-family: 'Lato';
    font-weight: 700;
